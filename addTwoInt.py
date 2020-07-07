@@ -1,13 +1,12 @@
-def add():
+import sys 
+print(sys.argv)
 
-    a= int(input("veuillez inserer la premiere valeur:"))
-    b= int(input("veuillez inserer la premiere valeur:"))
-    print(a+b)
+x = int(sys.argv[1])
+y = int(sys.argv[2])
 
-def main():
-    add()
-
-if __name__ == "__main__":
-    main()
+if(len(sys.argv)==3):
+    print(x+y)
+else:
+    print("Erreur")
 
 
